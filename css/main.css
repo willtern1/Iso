@@ -8,6 +8,7 @@ body {
     margin: 0 auto;
     color: white;
     font-family: 'AlethiaPro', sans-serif;
+    background-color: black;
 }
 
 .vertical-pattern {
@@ -218,6 +219,7 @@ body {
     color: white;
     margin: 0;
     font-size: 35px;
+    margin-bottom: 20px;
 }
 
 /* .product-table {
@@ -309,3 +311,38 @@ body {
     display: block;
     opacity: 1;
 }
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+  }
+  
+  .social-links img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  p {
+    margin: 0;
+  }
