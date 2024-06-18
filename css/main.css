@@ -1,3 +1,5 @@
+@import url('./media.css');
+
 @font-face {
     font-family: 'AlethiaPro';
     src: url('../font/alethiapro-regular.otf') format('otf');
@@ -222,30 +224,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* .product-table {
-    margin: 150px auto;
-    width: 80%;
-    margin-top: 150px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    gap: 10px;
-}
-
-.product-item {
-    width: 296px;
-    height: 400px;
-}
-
-.product-image {
-    object-fit: cover;
-    width: 100%;
-} */
-
-
 .product-table {
     display: flex;
     flex-wrap: wrap;
@@ -287,7 +265,6 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 85%;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
@@ -341,8 +318,79 @@ footer {
   .social-links img {
     width: 30px;
     height: 30px;
+    transition: all 1s ease-in-out;
+  }
+
+  .social-links img:hover {
+    transform: scale(1.2);
   }
   
   p {
     margin: 0;
   }
+
+@media screen and (max-width: 1188px) {
+    .vertical-pattern {
+        height: 35%;
+    }
+    
+    .product-table {
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .product-item {
+        flex-basis: auto;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    .vertical-pattern {
+        height: 20%;
+    }
+
+    .product-description {
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 1421px) {
+    .product-main {
+        padding-right: 20px;
+    }
+  }
+
+@media screen and (max-width: 370px) {
+    .product-main {
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px 0px;
+    }
+    
+    .product-link {
+        margin-top: 10px;
+        font-size: 19px;
+    }
+    
+    .main {
+        height: 800px;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    .popup-content {
+        width: 86%;
+    }
+
+    .close-popup {
+        top: -60px;
+        right: 0px;
+    }
+}
