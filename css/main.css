@@ -184,6 +184,7 @@ body {
 }
 
 .product-subtitle-2 {
+    line-height: 1;
     margin: 0;
     padding: 0;
     font-size: 25px;
@@ -375,8 +376,8 @@ footer {
     }
     
     .product-link {
-        margin-top: 10px;
-        font-size: 19px;
+        margin: 20px auto 0 auto;
+        font-size: 17px;
     }
     
     .main {
